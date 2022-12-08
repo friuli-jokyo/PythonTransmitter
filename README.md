@@ -3,5 +3,8 @@
 
 BVEの情報をPythonプログラムに送信するプラグイン
 
+## Usage
+[Release](https://github.com/friuli-jokyo/PythonTransmitter/releases)を参照
+
 ## License
 [MIT](LICENSE)
