@@ -1,0 +1,11 @@
+# vs settings
+.vs/
+.vscode/
+*.user
+
+# build output
+x64/
+x86/
+
+# python
+__pycache__/
