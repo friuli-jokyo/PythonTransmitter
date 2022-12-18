@@ -98,6 +98,9 @@ class BveReceiver(ABC):
             try:
                 header:bytes = sys.stdin.buffer.read(1)
                 match header:
+                    case b'':
+                        logger.warning("BVE is closed unexpectedly")
+                        return
                     case b'\x00':
                         self.__queue.put((self._on_load, (
                             self.__read_unsigned_char(),
